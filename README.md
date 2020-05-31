@@ -52,9 +52,11 @@ Note: O(n) does not necessarily mean single-traversal. For e.g. if you traverse 
 
 Before we start let us reiterate the key components of a Trie or Prefix Tree. A trie is a tree-like data structure that stores a dynamic set of strings. Tries are commonly used to facilitate operations like predictive text or autocomplete features on mobile phones or web search.
 
-Before we move into the autocomplete function we need to create a working trie for storing strings. We will create two classes:
+Before we move into the autocomplete function, we need to create a working trie for storing strings.
 
-A Trie class that contains the root node (empty string) A TrieNode class that exposes the general functionality of the Trie, like inserting a word or finding the node which represents a prefix.
+We will create two classes:
+1. A Trie class that contains the root node (empty string)
+2. A TrieNode class that exposes the general functionality of the Trie, like inserting a word or finding the node which represents a prefix.
 
 
 ### Problem 6: Unsorted Integer Array
