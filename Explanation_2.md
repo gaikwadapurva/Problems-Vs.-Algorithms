@@ -1,7 +1,7 @@
 ### Analysis
 
-In this algorithm the rotated array is sorted, therefore the goal is to find the rotate index then divide the array into two ordered parts. First, determine which side the target falls on, and then apply binary search to find the target index.
+The input array here is a rotated sorted array, the solution to finding whether the given number exists in the array or not involves the usage of binary search algorithm.
 
-Time complexity: The time complexity is logarithmic O(log n) because given the initial problem of size n (to search in a rotated sorted array), the size n is divided into sub-problem of size n/2 until we reach a problem of size 1.
+Time complexity: The time complexity is O(log n) because given the initial problem of size n (to search in a rotated sorted array), the size n is divided into sub-problem of size n/2 until we reach a problem of size 1.
 
-Space complexity: The space complexity is constant O(1) because the algorithm maintains the same total size of new variables allocated to memory during runtime, regardless of input size.
+Space complexity: The space complexity is O(1) because the algorithm maintains a constant extra space, regardless of input size.

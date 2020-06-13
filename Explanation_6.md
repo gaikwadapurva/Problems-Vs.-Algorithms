@@ -1,7 +1,7 @@
 ### Analysis
 
-This algorithm uses two variables to keep track of the maximum and minimum values as it goes through a single traversal the array.
+This algorithm uses two variables, min and max, to store the minimum and maximum number found in a single traversal of the array.
 
-Time complexity: The time complexity is linear O(n) because it has one for-loop that iterates from 1 to n which results in a running time grows directly in proportion to n. 
+Time complexity: The time complexity is linear O(n) because it has only one for loop which iterates from 1 to n. 
 
-Space complexity: The space complexity is constant O(1) because the algorithm maintains the same total size of new variables allocated to memory during runtime, regardless of input size.
+Space complexity: The space complexity is constant O(1) because regardless of the size of the input array, the algorithm maintains a constant total size of new variables allocated in the memory during runtime.

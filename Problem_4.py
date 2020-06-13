@@ -1,29 +1,30 @@
 def sort_012(input_list):
-    """
-    Given an input array consisting on only 0, 1, and 2, sort the array in a single traversal.
-    Args:
-       input_list(list): List to be sorted
-    """
-    left_index = 0
-    index = 0
-    last_index = len(input_list) - 1
-    while index <= last_index:
-        if input_list[index] == 0:
-            input_list[index], input_list[left_index] = input_list[left_index], input_list[index]
-            left_index += 1
-            index += 1
-        elif input_list[index] == 2:
-            input_list[index], input_list[last_index] = input_list[last_index], input_list[index]
-            last_index -= 1
+    # initialize pointers for next positions of 0 and 2
+    next_pos_0 = 0
+    next_pos_2 = len(input_list) - 1
+
+    front_index = 0
+
+    while front_index <= next_pos_2:
+        if input_list[front_index] == 0:
+            input_list[front_index] = input_list[next_pos_0]
+            input_list[next_pos_0] = 0
+            next_pos_0 += 1
+            front_index += 1
+        elif input_list[front_index] == 2:           
+            input_list[front_index] = input_list[next_pos_2] 
+            input_list[next_pos_2] = 2
+            next_pos_2 -= 1
         else:
-            index += 1
+            front_index += 1
+    
     return input_list
 
 
-def test_function(test_case):
-    sorted_array = sort_012(test_case)
+def test_function(input_list):
+    sorted_array = sort_012(input_list)
     print(sorted_array)
-    if sorted_array == sorted(test_case):
+    if sorted_array == sorted(input_list):
         print("Pass")
     else:
         print("Fail")

@@ -1,9 +1,7 @@
 ### Analysis
 
-This algorithm uses mergesort which is a stable divide and conquer sorting algorithm.
+This algorithm uses merge sort to sort the array in decreasing order at first and then rearranges the array digits forming two numbers resulting in maximum sum. 
 
-The goal is to divide the array into two halves, call mergesort recursively then merge the two sorted halves into one sorted whole. 
-
-Time complexity: The time complexity is superlinear O(nlog n) because combining the logarithmic time complexity O(log n) coming from the number of times we have to cut n in half to get down to sub arrays of just 1 element AND the linear time complexity O(n) coming from the cost of merging all n items together each time we merge the two sorted arrays.
+Time complexity: The time complexity is O(nlog n).
 
 Space complexity: The space complexity is linear O(n) where n is the input size because the size of the underlying array scales proportionally to the size of the input.
