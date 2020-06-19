@@ -1,12 +1,7 @@
 ### Analysis
 
-The only unique part about this TrieNode, was the inclusion of the suffixes function.
-At each recursive call, I appended each char as a child of the current suffix, to all suffixes.
+The objective here is the development of a trie, a tree-like data structure to store a dynamic set of strings, which should have properties such as inserting a node (word) or finding a node which represents a prefix.
 
-Time Complexity:
-Insert loops over all character in the given word - O(n).
-Find loops over all characters in the given prefix - O(n).
-Suffixes loops over all TrieNodes in children, and calls itself m times - O(mn).
+Time Complexity: The time complexity of the algorithm here is O(mn) where m is the length that is being searched for or being inserted into the trie, and n is the total number of words in the trie.
 
-Space Complexity:
-Worst case would be when words with no common characters between them, therefore having a node for each letter - O(n).
+Space Complexity: Worst case space complexity would be there would be no words with common characters between them, i.e., O(n).
