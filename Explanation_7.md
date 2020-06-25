@@ -1,7 +1,7 @@
 ### Analysis
 
-This algorithm uses the trie data structure to implement an HTTPRouter like you would find in a typical web server.
+This algorithm will be used to implement an HTTPRouter like you would find in a typical web server using the Trie data structure we learned previously.
 
-Time complexity: The time complexity of RouteTrie find and insert function is linear O(n) where n is the length of path_list because it has one for-loop that iterates from 1 to n which results in a running time grows directly in proportion to n. 
+Time complexity: The runtime complexity of this algorithm would be O(n) because searching and inserting from a trie depends on the length of the path being searched for, and being inserted. 
 
-Space complexity: The space complexity is linear O(n) where n is the length of path_list because the size of the underlying array scales proportionally to the length of the path_list.
+Space complexity: The worst case here would be that no paths have common folders between them and all of those are independent of each other resulting in a space complexity of O(n).
