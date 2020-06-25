@@ -3,7 +3,7 @@
 
 ## About the Project
 
-This project showcases solutions to seven tasks using multiple basic algorithms. It uses Python to analyze and answer questions using clean implementations and efficient answers. Lastly, it also indicates run time analysis of the solutions and determines its efficiency and design choices.
+The objective here is to solve a series of real-world open ended problems which train you to apply suitable data structures and algorithms under different context. This project uses Python to analyze and answer questions using clean implementations and efficient answers. Lastly, it also indicates run time analysis of the solutions and determines its efficiency and design choices.
 
 
 ### Problem 1: Square Root of an Integer
